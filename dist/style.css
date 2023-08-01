@@ -1,9 +1,19 @@
 body {
+  height: 100vh;
+}
+
+.lightmode {
   background-image: repeating-linear-gradient(rgb(207, 48, 255), rgb(119, 167, 159), rgb(207, 48, 255)), url("../src/imgs/mybg.svg");
   background-attachment: no-repeat, scroll;
   background-blend-mode: screen, normal;
   background-color: white;
-  height: 100vh;
+}
+
+.darkmode {
+  background-image: repeating-linear-gradient(rgb(207, 48, 255), rgb(119, 167, 159), rgb(207, 48, 255)), url("../src/imgs/darkmode_bg.svg");
+  background-attachment: no-repeat, scroll;
+  background-blend-mode: multiply, normal;
+  background-color: black;
 }
 
 article {
