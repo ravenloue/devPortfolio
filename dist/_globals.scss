@@ -1,0 +1,31 @@
+body{
+    background-image: repeating-linear-gradient(rgba(207, 48, 255, 1), rgba(119, 167, 159, 1),rgba(207, 48, 255, 1)), url("../app/src/imgs/my_bg.svg");
+    background-attachment: fixed, scroll;
+    background-blend-mode: screen, normal;
+    background-color: white;
+    height: 100vh;
+}
+.darkmode{
+    background-image: repeating-linear-gradient(rgba(207, 48, 255, 1), rgba(119, 167, 159, 1),rgba(207, 48, 255, 1)), url("../app/src/imgs/darkmode_bg.svg");
+    background-blend-mode: multiply, normal;
+    background-color: black;
+}
+article{
+    height: 100vh;
+    
+}
+#navbar{
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: rgba(111, 33, 191, .1);
+    border: 1px hidden;
+    border-radius: 25px;
+    text-align: center;
+    justify-content:space-evenly;
+    font-size: 36px;
+    ul li{
+        display: inline;
+        list-style-type: none;
+        padding: 20px;
+    }
+}
