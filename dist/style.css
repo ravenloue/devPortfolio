@@ -29,7 +29,7 @@ article {
 #navbar ul li {
   display: inline;
   list-style-type: none;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #socials {
@@ -42,4 +42,49 @@ article {
   border: 5px solid #3a1a4e;
   border-radius: 50px;
   text-align: center;
+}
+
+#modeToggle {
+  background-color: #A1F;
+  border: 2px hidden;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  margin: auto;
+  padding: 0;
+  height: 24px;
+  position: relative;
+  top: -6px;
+  line-height: 1.75em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 50px;
+}
+#modeToggle #dark, #modeToggle #light {
+  align-items: center;
+  display: flex;
+  padding: 0 2px;
+  margin: 1px 0;
+  width: 50%;
+}
+#modeToggle #dark {
+  justify-content: flex-start;
+  left: -2px;
+}
+#modeToggle #light {
+  justify-content: flex-end;
+}
+#modeToggle #mode {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 20px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 20px;
+}
+#modeToggle .dark {
+  transform: translateX(26px);
 }
