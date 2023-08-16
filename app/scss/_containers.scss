@@ -13,6 +13,9 @@
         padding: 0 20px;
     }
 }
+.darkmode #navbar{
+    background-color: rgba(111,33,191,1);
+}
 #socials{
     margin-left: 15vh;
     margin-top: 15vh;
@@ -66,5 +69,8 @@
     }
     .dark{
         transform: translateX(26px);
+    }
+    #mode.dark{
+        background-color: #FFF;
     }
 }
