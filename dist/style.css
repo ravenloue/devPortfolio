@@ -97,3 +97,12 @@ article {
 #modeToggle #mode.dark {
   background-color: #FFF;
 }
+#divider {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#divider img {
+  width: 50vw;
+  height: 7vh;
+}
