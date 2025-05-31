@@ -1,178 +1,467 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>👩🏻‍💻 Brandie Mallard</title>
-        <link href="./dist/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./dist/base.css">
-        <script src="./app/src/app.js" defer=""></script>
-    </head>
-    <body class="darkmode">
-        <!-- Main Nav Bar -->
-        <header>
-            <nav id="navbar" class="font-serif mt-9 w-[80vw] ml-[10vw] bg-puissantpurple-10 border border-hidden rounded-3xl text-4xl dark:bg-puissantpurple-70 h-20 flex items-center justify-between px-4">
-                <!-- Spacer for left side -->
-                <div class="w-1/4"></div>
-                <!-- Centered nav links -->
-                <ul class="flex justify-center space-x-6">
-                    <li class="list-none px-5 py-0">
-                        <a href="#home" class="hover:animate-pulse transition-all duration-200 hover:underline">Home</a>
-                    </li>
-                    <li class="list-none px-5 py-0 whitespace-nowrap">
-                        <a href="#about" class="hover:animate-pulse transition-all duration-200 hover:underline">About Me</a>
-                    </li>
-                    <li class="list-none px-5 py-0">
-                        <a href="#projects" class="hover:animate-pulse transition-all duration-200 hover:underline">Projects</a>
-                    </li>
-                    <li class="list-none px-5 py-0">
-                        <a href="#blog" class="hover:animate-pulse transition-all duration-200 hover:underline">Blog</a>
-                    </li>
-                    <li class="list-none px-5 py-0 whitespace-nowrap">
-                        <a href="#contact" class="hover:animate-pulse transition-all duration-200 hover:underline">Contact Me</a>
-                    </li>
-                </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>👩🏻‍💻 Brandie Mallard</title>
+    <link href="./dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/base.css" />
+    <script src="./app/src/app.js" defer=""></script>
+  </head>
+  <body class="darkmode">
+    <!-- Main Nav Bar -->
+    <header>
+      <nav
+        id="navbar"
+        class="font-serif mt-9 w-[80vw] ml-[10vw] bg-puissantpurple-10 border border-hidden rounded-3xl text-4xl dark:bg-puissantpurple-70 h-20 flex items-center justify-between px-4"
+      >
+        <!-- Spacer for left side -->
+        <div class="w-1/4"></div>
+        <!-- Centered nav links -->
+        <ul class="flex justify-center space-x-6">
+          <li class="list-none px-5 py-0">
+            <a
+              href="#home"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Home</a
+            >
+          </li>
+          <li class="list-none px-5 py-0 whitespace-nowrap">
+            <a
+              href="#about"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >About Me</a
+            >
+          </li>
+          <li class="list-none px-5 py-0">
+            <a
+              href="#projects"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Projects</a
+            >
+          </li>
+          <li class="list-none px-5 py-0">
+            <a
+              href="#blog"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Blog</a
+            >
+          </li>
+          <li class="list-none px-5 py-0 whitespace-nowrap">
+            <a
+              href="#contact"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
 
-                <!-- Button inside list item on far right -->
-                <ul class="flex w-1/4 justify-end">
-                    <li class="list-none px-5 py-0 text-base">
-                    <button id="modeToggle" class="bg-brightviolet border-2 border-hidden rounded-4xl cursor-pointer inline-flex m-auto p-0 h-6 relative leading-[1.75rem]">
-                        <div id="dark" class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-start -left-0.5">🌙</div>
-                        <div id="light" class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-end">☀️</div>
-                        <div id="mode" class="bg-stone-900 rounded-[50%] h-5 right-0.5 absolute top-0.5 w-5 transition-transform duration-500 ease-[cubic-bezier(0.23, 1, 0.320, 1)]"> </div>
-                    </button>
-                    </li>
-                </ul>
-
-            </nav>
-        </header>
+        <!-- Button inside list item on far right -->
+        <ul class="flex w-1/4 justify-end">
+          <li class="list-none px-5 py-0 text-base">
+            <button
+              id="modeToggle"
+              class="bg-brightviolet border-2 border-hidden rounded-4xl cursor-pointer inline-flex m-auto p-0 h-6 relative leading-[1.75rem]"
+            >
+              <div
+                id="dark"
+                class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-start -left-0.5"
+              >
+                🌙
+              </div>
+              <div
+                id="light"
+                class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-end"
+              >
+                ☀️
+              </div>
+              <div
+                id="mode"
+                class="bg-stone-900 rounded-[50%] h-5 right-0.5 absolute top-0.5 w-5 transition-transform duration-500 ease-[cubic-bezier(0.23, 1, 0.320, 1)]"
+              ></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- main content -->
-        <main class="relative z-20">
-            <!-- Home -->
-            <article class="h-dvh flex flex-row mt-10 gap-8" id="home">
-                <section id="socials" class="ml-[15vh] mt-[15vh] w-24 h-72 bg-veronicapurple flex flex-col items-center justify-center inset-shadow-[4px_4px_13px_20px_var(--color-smalt)] border-5 border-russianviolet rounded-[50px] gap-y-4">
-                    <a href="#github" class="inline hover:animate-bounce">
-                        <svg width="51.4" xmlns="http://www.w3.org/2000/svg" height="51.4" id="screenshot-9f348613-9ce7-8099-8006-44407cd8d818" viewBox="102.75 309.471 51.4 51.4" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" aria-label="Github Logo"><g id="shape-9f348613-9ce7-8099-8006-44407cd8d818"><g class="fills" id="fills-9f348613-9ce7-8099-8006-44407cd8d818"><path d="M128.453,309.471C114.252,309.465,102.750,321.274,102.750,335.849C102.750,347.375,109.945,357.172,119.966,360.770C121.315,361.118,121.108,360.133,121.108,359.461L121.108,354.890C113.316,355.827,113.000,350.531,112.478,349.646C111.421,347.794,108.923,347.322,109.670,346.437C111.444,345.499,113.253,346.673,115.349,349.852C116.865,352.159,119.822,351.769,121.321,351.386C121.648,350.000,122.349,348.761,123.313,347.800C115.240,346.313,111.875,341.252,111.875,335.236C111.875,332.316,112.811,329.632,114.648,327.467C113.477,323.899,114.757,320.843,114.930,320.389C118.266,320.082,121.734,322.843,122.004,323.061C123.899,322.536,126.064,322.259,128.487,322.259C130.922,322.259,133.093,322.548,135.005,323.079C135.654,322.571,138.870,320.200,141.970,320.489C142.137,320.943,143.389,323.928,142.286,327.449C144.147,329.620,145.094,332.328,145.094,335.253C145.094,341.282,141.706,346.348,133.610,347.811C135.010,349.226,135.799,351.161,135.797,353.179L135.797,359.815C135.843,360.346,135.797,360.871,136.659,360.871C146.828,357.349,154.150,347.481,154.150,335.855C154.150,321.274,142.642,309.471,128.453,309.471ZZ" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/></g></g></svg>
-                    </a>
-                    <a href="#linkedIn" class="inline hover:animate-bounce">
-                        <svg width="51.405" xmlns="http://www.w3.org/2000/svg" height="51.405" id="screenshot-b9293ae4-fb9b-8028-8002-aa25366189fb" viewBox="0 0 51.405 51.405" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" aria-label="LinkedIn Logo"><g id="shape-b9293ae4-fb9b-8028-8002-aa25366189fb" rx="0" ry="0" style="fill: rgb(0, 0, 0);"><g id="shape-b9293ae4-fb9b-8028-8002-aa25366189fc" rx="0" ry="0" style="fill: rgb(0, 0, 0);"><g id="shape-b9293ae4-fb9b-8028-8002-aa25366251e0"><g class="fills" id="fills-b9293ae4-fb9b-8028-8002-aa25366251e0"><path d="M44.217,0.000L7.188,0.000C3.223,0.011,0.011,3.223,0.000,7.188L0.000,44.217C0.011,48.182,3.223,51.394,7.188,51.405L44.217,51.405C48.187,51.405,51.405,48.187,51.405,44.217L51.405,7.188C51.405,3.218,48.187,0.000,44.217,0.000ZZM48.530,44.217C48.513,46.592,46.592,48.513,44.217,48.530L7.188,48.530C4.813,48.513,2.892,46.592,2.875,44.217L2.875,7.188C2.892,4.813,4.813,2.892,7.188,2.875L44.217,2.875C46.592,2.892,48.513,4.813,48.530,7.188Z" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/></g></g><g id="shape-b9293ae4-fb9b-8028-8002-aa25366251e1" rx="0" ry="0" style="fill: rgb(0, 0, 0);"><g id="shape-b9293ae4-fb9b-8028-8002-aa253662f2c2"><g class="fills" id="fills-b9293ae4-fb9b-8028-8002-aa253662f2c2"><path d="M9.534,22.103C9.534,20.515,10.821,19.228,12.409,19.228C13.996,19.228,15.284,20.515,15.284,22.103L15.284,40.790L15.284,40.790C15.284,42.378,13.996,43.665,12.409,43.665C10.821,43.665,9.534,42.378,9.534,40.790Z" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/></g></g><g id="shape-b9293ae4-fb9b-8028-8002-aa2536632183"><g class="fills" id="fills-b9293ae4-fb9b-8028-8002-aa2536632183"><ellipse cx="12.408500000000004" cy="10.591499999999996" rx="2.875" ry="2.875" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/></g></g><g id="shape-b9293ae4-fb9b-8028-8002-aa2536635ab0"><g class="fills" id="fills-b9293ae4-fb9b-8028-8002-aa2536635ab0"><path d="M41.860,29.641L41.860,40.796C41.860,42.384,40.573,43.671,38.985,43.671C37.397,43.671,36.110,42.384,36.110,40.796L36.110,29.641C36.110,27.982,35.225,26.450,33.788,25.620C32.352,24.791,30.582,24.791,29.145,25.620C27.709,26.450,26.824,27.982,26.824,29.641L26.824,40.796C26.824,42.384,25.537,43.671,23.949,43.671C22.361,43.671,21.074,42.384,21.074,40.796L21.074,22.109C21.098,20.531,22.371,19.258,23.949,19.234C24.941,19.207,25.868,19.725,26.364,20.585C29.581,18.760,33.526,18.785,36.720,20.651C39.913,22.517,41.871,25.943,41.860,29.641ZZ" style="fill: rgb(255, 255, 255); fill-opacity: 1;"/></g></g></g></g></g></svg>
-                    </a>
-                    <a href="#x" class="inline hover:animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 300 271" role="img" aria-label="X Logo"><path fill="white" d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"/></svg>
+    <main class="relative z-20">
+      <!-- Home -->
+      <article class="h-dvh flex flex-row mt-10 gap-8" id="home">
+        <section
+          id="socials"
+          class="ml-[15vh] mt-[15vh] w-24 h-72 bg-veronicapurple flex flex-col items-center justify-center inset-shadow-[4px_4px_13px_20px_var(--color-smalt)] border-5 border-russianviolet rounded-[50px] gap-y-4"
+        >
+          <a href="#github" class="inline hover:animate-bounce">
+            <svg
+              width="51.4"
+              xmlns="http://www.w3.org/2000/svg"
+              height="51.4"
+              id="screenshot-9f348613-9ce7-8099-8006-44407cd8d818"
+              viewBox="102.75 309.471 51.4 51.4"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="none"
+              version="1.1"
+              aria-label="Github Logo"
+            >
+              <g id="shape-9f348613-9ce7-8099-8006-44407cd8d818">
+                <g
+                  class="fills"
+                  id="fills-9f348613-9ce7-8099-8006-44407cd8d818"
+                >
+                  <path
+                    d="M128.453,309.471C114.252,309.465,102.750,321.274,102.750,335.849C102.750,347.375,109.945,357.172,119.966,360.770C121.315,361.118,121.108,360.133,121.108,359.461L121.108,354.890C113.316,355.827,113.000,350.531,112.478,349.646C111.421,347.794,108.923,347.322,109.670,346.437C111.444,345.499,113.253,346.673,115.349,349.852C116.865,352.159,119.822,351.769,121.321,351.386C121.648,350.000,122.349,348.761,123.313,347.800C115.240,346.313,111.875,341.252,111.875,335.236C111.875,332.316,112.811,329.632,114.648,327.467C113.477,323.899,114.757,320.843,114.930,320.389C118.266,320.082,121.734,322.843,122.004,323.061C123.899,322.536,126.064,322.259,128.487,322.259C130.922,322.259,133.093,322.548,135.005,323.079C135.654,322.571,138.870,320.200,141.970,320.489C142.137,320.943,143.389,323.928,142.286,327.449C144.147,329.620,145.094,332.328,145.094,335.253C145.094,341.282,141.706,346.348,133.610,347.811C135.010,349.226,135.799,351.161,135.797,353.179L135.797,359.815C135.843,360.346,135.797,360.871,136.659,360.871C146.828,357.349,154.150,347.481,154.150,335.855C154.150,321.274,142.642,309.471,128.453,309.471ZZ"
+                    style="fill: rgb(255, 255, 255); fill-opacity: 1"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#linkedIn" class="inline hover:animate-bounce">
+            <svg
+              width="51.405"
+              xmlns="http://www.w3.org/2000/svg"
+              height="51.405"
+              id="screenshot-b9293ae4-fb9b-8028-8002-aa25366189fb"
+              viewBox="0 0 51.405 51.405"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              fill="none"
+              version="1.1"
+              aria-label="LinkedIn Logo"
+            >
+              <g
+                id="shape-b9293ae4-fb9b-8028-8002-aa25366189fb"
+                rx="0"
+                ry="0"
+                style="fill: rgb(0, 0, 0)"
+              >
+                <g
+                  id="shape-b9293ae4-fb9b-8028-8002-aa25366189fc"
+                  rx="0"
+                  ry="0"
+                  style="fill: rgb(0, 0, 0)"
+                >
+                  <g id="shape-b9293ae4-fb9b-8028-8002-aa25366251e0">
+                    <g
+                      class="fills"
+                      id="fills-b9293ae4-fb9b-8028-8002-aa25366251e0"
+                    >
+                      <path
+                        d="M44.217,0.000L7.188,0.000C3.223,0.011,0.011,3.223,0.000,7.188L0.000,44.217C0.011,48.182,3.223,51.394,7.188,51.405L44.217,51.405C48.187,51.405,51.405,48.187,51.405,44.217L51.405,7.188C51.405,3.218,48.187,0.000,44.217,0.000ZZM48.530,44.217C48.513,46.592,46.592,48.513,44.217,48.530L7.188,48.530C4.813,48.513,2.892,46.592,2.875,44.217L2.875,7.188C2.892,4.813,4.813,2.892,7.188,2.875L44.217,2.875C46.592,2.892,48.513,4.813,48.530,7.188Z"
+                        style="fill: rgb(255, 255, 255); fill-opacity: 1"
+                      />
+                    </g>
+                  </g>
+                  <g
+                    id="shape-b9293ae4-fb9b-8028-8002-aa25366251e1"
+                    rx="0"
+                    ry="0"
+                    style="fill: rgb(0, 0, 0)"
+                  >
+                    <g id="shape-b9293ae4-fb9b-8028-8002-aa253662f2c2">
+                      <g
+                        class="fills"
+                        id="fills-b9293ae4-fb9b-8028-8002-aa253662f2c2"
+                      >
+                        <path
+                          d="M9.534,22.103C9.534,20.515,10.821,19.228,12.409,19.228C13.996,19.228,15.284,20.515,15.284,22.103L15.284,40.790L15.284,40.790C15.284,42.378,13.996,43.665,12.409,43.665C10.821,43.665,9.534,42.378,9.534,40.790Z"
+                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
+                        />
+                      </g>
+                    </g>
+                    <g id="shape-b9293ae4-fb9b-8028-8002-aa2536632183">
+                      <g
+                        class="fills"
+                        id="fills-b9293ae4-fb9b-8028-8002-aa2536632183"
+                      >
+                        <ellipse
+                          cx="12.408500000000004"
+                          cy="10.591499999999996"
+                          rx="2.875"
+                          ry="2.875"
+                          transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
+                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
+                        />
+                      </g>
+                    </g>
+                    <g id="shape-b9293ae4-fb9b-8028-8002-aa2536635ab0">
+                      <g
+                        class="fills"
+                        id="fills-b9293ae4-fb9b-8028-8002-aa2536635ab0"
+                      >
+                        <path
+                          d="M41.860,29.641L41.860,40.796C41.860,42.384,40.573,43.671,38.985,43.671C37.397,43.671,36.110,42.384,36.110,40.796L36.110,29.641C36.110,27.982,35.225,26.450,33.788,25.620C32.352,24.791,30.582,24.791,29.145,25.620C27.709,26.450,26.824,27.982,26.824,29.641L26.824,40.796C26.824,42.384,25.537,43.671,23.949,43.671C22.361,43.671,21.074,42.384,21.074,40.796L21.074,22.109C21.098,20.531,22.371,19.258,23.949,19.234C24.941,19.207,25.868,19.725,26.364,20.585C29.581,18.760,33.526,18.785,36.720,20.651C39.913,22.517,41.871,25.943,41.860,29.641ZZ"
+                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#x" class="inline hover:animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="51"
+              height="51"
+              viewBox="0 0 300 271"
+              role="img"
+              aria-label="X Logo"
+            >
+              <path
+                fill="white"
+                d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
+              />
+            </svg>
+          </a>
+          <a href="#bluesky" class="inline hover:animate-bounce">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="51"
+              height="51"
+              viewBox="0 0 600 530"
+              role="img"
+              aria-label="Bluesky Logo"
+            >
+              <path
+                fill="white"
+                d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
+              />
+            </svg>
+          </a>
+        </section>
+        <section class="mt-56">
+          <h1 class="text-center text-8xl mt-7">Hi there,</h1>
+          <h2 class="text-7xl mt-7 ml-64 whitespace-nowrap">
+            I'm
+            <span
+              class="text-puissantpurple-70 text-shadow-[2px_2px_4px_var(--color-purple-200)]"
+              >Brandie</span
+            >
+          </h2>
+          <h3 class="text-3xl ml-96 whitespace-nowrap">Software Developer</h3>
+        </section>
+        <section aria-label="Portrait" class="mt-16 ml-24">
+          <img
+            src="./app/src/imgs/picofme.png"
+            alt="Bio Pic"
+            class="my-auto w-3/4"
+          />
+        </section>
+      </article>
+      <div id="divider" class="text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+      <!-- About Me -->
+      <article
+        class="h-dvh flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto"
+        id="about"
+      >
+        <section aria-label="Portrait" class="">
+          <!-- Image Placeholder -->
+          <img
+            src="./app/src/imgs/picofme.png"
+            alt="Bio Pic"
+            class="mx-auto my-auto w-4/5"
+          />
+        </section>
+        <section aria-label="Bio" class="rounded-4xl m-auto h-3/4 max-w-5xl">
+          <h2 class="text-8xl font-bold mb-8 text-purple-300">About Me</h2>
+          <p class="text-4xl leading-relaxed text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </article>
+      <article class="h-dvh">
+        <h2 class="text-8xl font-bold text-purple-300 text-center">Skills</h2>
+        <div
+          class="w-full flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto"
+        >
+          <section
+            id="skills"
+            class="bg-purple-300/50 rounded-4xl m-auto w-1/2"
+          >
+            <p class="text-4xl leading-relaxed text-gray-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+          <section
+            id="skillsGraphic"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[600px]"
+          >
+            &emsp;skills graphic
+          </section>
+        </div>
+      </article>
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+      <!-- Projects -->
+      <article class="h-dvh mt-10" id="projects">
+        <h2 class="text-8xl font-bold text-purple-300 text-center">Projects</h2>
+        <div
+          class="w-full flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto"
+        >
+          <section
+            id="project1"
+            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="project2"
+            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="project3"
+            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="project4"
+            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="project5"
+            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          >
+            &emsp;
+          </section>
+        </div>
+      </article>
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+      <!-- Blog -->
+      <article class="h-dvh" id="blog">
+        <h2 class="text-8xl font-bold text-purple-300 text-center">Blog</h2>
+        <div
+          class="w-full grid grid-cols-2 items-center justify-center gap-8 px-6 py-12 mx-auto"
+        >
+          <section
+            id="blog1"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="blog2"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="blog3"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="blog4"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="blog5"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+          <section
+            id="blog5"
+            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          >
+            &emsp;
+          </section>
+        </div>
+      </article>
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+      <!-- Contact -->
+      <article class="h-dvh" id="contact">
+        <h2 class="text-8xl font-bold text-center text-purple-300 mb-8 mt-20">
+          Contact Me
+        </h2>
+        <form class="grid grid-cols-1 gap-6 w-2/5 mx-auto px-6 py-12">
+          <!-- Name -->
+          <div>
+            <label
+              for="name"
+              class="block mb-2 text-lg font-semibold text-white"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            />
+          </div>
 
-                    </a>
-                    <a href="#bluesky" class="inline hover:animate-bounce">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 600 530" role="img" aria-label="Bluesky Logo">
-                        <path fill="white" d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
-                        </svg>
+          <!-- Email -->
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-lg font-semibold text-white"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            />
+          </div>
 
-                    </a>
-                </section>
-                <section class="mt-56">
-                    <h1 class="text-center text-8xl mt-7">Hi there,</h1>
-                    <h2 class="text-7xl mt-7 ml-64 whitespace-nowrap">I'm <span class="text-puissantpurple-70 text-shadow-[2px_2px_4px_var(--color-purple-200)]">Brandie</span></h2>
-                    <h3 class="text-3xl ml-96 whitespace-nowrap">Software Developer</h3>
-                </section>
-                <section aria-label="Portrait" class="mt-16 ml-24">
-                    <img src="./app/src/imgs/picofme.png" alt="Bio Pic" class="my-auto w-3/4">
-                </section>
-            </article>
-            <div id="divider" class="text-center"><img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline"></div>
-            <!-- About Me -->
-            <article class="h-dvh flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto" id="about">
-                <section aria-label="Portrait" class="">
-                    <!-- Image Placeholder -->
-                     <img src="./app/src/imgs/picofme.png" alt="Bio Pic" class="mx-auto my-auto w-4/5">
-                </section>
-                <section aria-label="Bio" class="rounded-4xl m-auto h-3/4 max-w-5xl">
-                    <h2 class="text-8xl font-bold mb-8 text-purple-300">About Me</h2>
-                    <p class="text-4xl leading-relaxed text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </section>
-            </article>
-            <article class="h-dvh">
-                <h2 class="text-8xl font-bold text-purple-300 text-center">Skills</h2>
-                <div class="w-full flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto">
-                    <section id="skills" class="bg-purple-300/50 rounded-4xl m-auto w-1/2">
-                        <p class="text-4xl leading-relaxed text-gray-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </section>
-                    <section id="skillsGraphic" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[600px]">&emsp;skills graphic
-                    </section>
-                </div>
-            </article>
-            <div id="divider" class="ml-auto mr-auto text-center"><img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline"></div>
-            <!-- Projects -->
-            <article class="h-dvh mt-10" id="projects">
-                <h2 class="text-8xl font-bold text-purple-300 text-center">Projects</h2>
-                <div class="w-full flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto">
-                    <section id="project1" class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]">&emsp;
-                    </section>
-                    <section id="project2" class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]">&emsp;
-                    </section>
-                    <section id="project3" class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]">&emsp;
-                    </section>
-                    <section id="project4" class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]">&emsp;
-                    </section>
-                    <section id="project5" class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]">&emsp;
-                    </section>
-                </div>
-            </article>
-            <div id="divider" class="ml-auto mr-auto text-center"><img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline"></div>
-            <!-- Blog -->
-            <article class="h-dvh" id="blog">
-                <h2 class="text-8xl font-bold text-purple-300 text-center">Blog</h2>
-                <div class="w-full grid grid-cols-2 items-center justify-center gap-8 px-6 py-12 mx-auto">
-                    <section id="blog1" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                    <section id="blog2" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                    <section id="blog3" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                    <section id="blog4" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                    <section id="blog5" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                    <section id="blog5" class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]">&emsp;
-                    </section>
-                </div>
-            </article>
-            <div id="divider" class="ml-auto mr-auto text-center"><img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline"></div>
-            <!-- Contact -->
-            <article class="h-dvh" id="contact">
-                <h2 class="text-8xl font-bold text-center text-purple-300 mb-8 mt-20">Contact Me</h2>
-                <form class="grid grid-cols-1 gap-6 w-2/5 mx-auto px-6 py-12">
-                    <!-- Name -->
-                    <div>
-                    <label for="name" class="block mb-2 text-lg font-semibold text-white">Name</label>
-                    <input type="text" id="name" name="name" required
-                            class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400">
-                    </div>
+          <!-- Message -->
+          <div>
+            <label
+              for="message"
+              class="block mb-2 text-lg font-semibold text-white"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            ></textarea>
+          </div>
 
-                    <!-- Email -->
-                    <div>
-                    <label for="email" class="block mb-2 text-lg font-semibold text-white">Email</label>
-                    <input type="email" id="email" name="email" required
-                            class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400">
-                    </div>
-
-                    <!-- Message -->
-                    <div>
-                    <label for="message" class="block mb-2 text-lg font-semibold text-white">Message</label>
-                    <textarea id="message" name="message" rows="5" required
-                                class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit"
-                            class="w-full py-3 rounded-2xl bg-brightviolet text-white font-bold text-xl hover:bg-purple-600 transition-all duration-300">
-                    Send Message
-                    </button>
-                </form>
-            </article>
-        </main>
-        
-    </body>
-    <footer>
-
-    </footer>
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full py-3 rounded-2xl bg-brightviolet text-white font-bold text-xl hover:bg-purple-600 transition-all duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </article>
+    </main>
+  </body>
+  <footer></footer>
 </html>
