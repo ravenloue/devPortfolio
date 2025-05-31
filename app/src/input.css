@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brightviolet: #A1F;
+    --color-puissantpurple-70: rgba(111,33,191,.7);
+    --color-puissantpurple-10: rgba(111, 33, 191, .1);
+    --color-veronicapurple: #752e76;
+    --color-russianviolet: #3a1a4e;
+    --color-smalt: rgba(0, 44, 153, .2);
+}
+
+@layer components{
+
+}
