@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./app/src/input.css -o ./dist/style.css --watch",
-    "prettier": "npx prettier --write **/*.html"
+    "prettier": "npx prettier --write **/*.html",
+    "minify": "npx tailwindcss -o ./dist/style.css --minify"
   },
   "keywords": [],
   "author": "Brandie Mallard",
