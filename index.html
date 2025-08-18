@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="./dist/base.css" />
 
     <script src="./app/src/app.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      defer
+    ></script>
     <script src="./app/src/skills.js" defer></script>
   </head>
 
@@ -128,7 +131,6 @@
 
     <!-- main content -->
     <main class="relative z-20">
-
       <!-- Hero Section -->
       <section
         class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8"
@@ -336,7 +338,6 @@
 
       <!-- About Me -->
       <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="about">
-
         <!-- Section Title-->
         <div class="text-center mb-16">
           <h2
@@ -388,40 +389,60 @@
 
       <!-- Skills -->
       <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="skills">
-
         <!-- Section Title-->
-        <h2 class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center">Skills</h2>
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center"
+        >
+          Skills
+        </h2>
         <div class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
 
         <!-- 3d Skills Container-->
         <div id="container">
-          <div id="canvas-container" class="bg-puissantpurple/10 backdrop-blur-md"></div>
-          
+          <div
+            id="canvas-container"
+            class="bg-puissantpurple/10 backdrop-blur-md"
+          ></div>
+
           <!-- Speed Buttons -->
           <div class="controls">
-              <button class="control-btn active" onclick="setSpeed('normal')">Normal</button>
-              <button class="control-btn" onclick="setSpeed('slow')">Slow</button>
-              <button class="control-btn" onclick="setSpeed('fast')">Fast</button>
-              <button class="control-btn" onclick="togglePause()">Pause</button>
+            <button class="control-btn active" onclick="setSpeed('normal')">
+              Normal
+            </button>
+            <button class="control-btn" onclick="setSpeed('slow')">Slow</button>
+            <button class="control-btn" onclick="setSpeed('fast')">Fast</button>
+            <button class="control-btn" onclick="togglePause()">Pause</button>
           </div>
         </div>
 
         <!-- Skills Legend -->
         <div class="legend">
           <div class="legend-item">
-            <div class="legend-color" style="background: linear-gradient(135deg, #06b6d4, #0891b2);"></div>
+            <div
+              class="legend-color"
+              style="background: linear-gradient(135deg, #06b6d4, #0891b2)"
+            ></div>
             <span class="legend-text">Frontend</span>
           </div>
           <div class="legend-item">
-            <div class="legend-color" style="background: linear-gradient(135deg, #10b981, #059669);"></div>
+            <div
+              class="legend-color"
+              style="background: linear-gradient(135deg, #10b981, #059669)"
+            ></div>
             <span class="legend-text">Backend</span>
           </div>
           <div class="legend-item">
-            <div class="legend-color" style="background: linear-gradient(135deg, #f59e0b, #d97706);"></div>
+            <div
+              class="legend-color"
+              style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+            ></div>
             <span class="legend-text">Database</span>
           </div>
           <div class="legend-item">
-            <div class="legend-color" style="background: linear-gradient(135deg, #ef4444, #dc2626);"></div>
+            <div
+              class="legend-color"
+              style="background: linear-gradient(135deg, #ef4444, #dc2626)"
+            ></div>
             <span class="legend-text">Tools</span>
           </div>
         </div>
@@ -452,9 +473,12 @@
 
       <!-- Projects -->
       <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="projects">
-
         <!-- Section Title-->
-        <h2 class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]">Projects</h2>
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
+        >
+          Projects
+        </h2>
         <div class="w-30 md:w-60 h-1 bg-purple-600 mx-auto mt-[-30px]"></div>
         <p class="text-center text-xs">Adding projects soon~</p>
         <div
@@ -491,7 +515,7 @@
             &emsp;
           </section>
         </div>
-      </article>
+      </section>
 
       <div id="divider" class="ml-auto mr-auto text-center">
         <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
@@ -499,9 +523,12 @@
 
       <!-- Blog -->
       <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="blog">
-        
         <!-- Section Title-->
-        <h2 class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]">Blog</h2>
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
+        >
+          Blog
+        </h2>
         <div class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-30px]"></div>
         <p class="text-center text-xs">Adding blogs soon~</p>
         <div
@@ -551,9 +578,12 @@
 
       <!-- Contact -->
       <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="contact">
-
         <!-- Section Title -->
-        <h2 class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center">Contact Me</h2>
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center"
+        >
+          Contact Me
+        </h2>
         <div class="w-40 md:w-80 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
 
         <p class="text-center text-xs">Form not functional atm</p>
@@ -609,7 +639,7 @@
           <!-- Submit Button -->
           <button
             type="submit"
-            class="w-full py-3 rounded-2xl bg-brightviolet text-white font-bold text-xl hover:bg-purple-600 transition-all duration-300 "
+            class="w-full py-3 rounded-2xl bg-brightviolet text-white font-bold text-xl hover:bg-purple-600 transition-all duration-300"
           >
             Send Message
           </button>
