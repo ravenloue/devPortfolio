@@ -6,7 +6,7 @@ const texts = [
         'Tech Enthusiast',
         'Gamer',
         'Oddball',
-        'Continous Learner'
+        'Continuous Learner'
     ]
 const typingSpeed = 100;
 const deletingSpeed = 50;
@@ -28,6 +28,11 @@ function toggleFunction() {
     let nav = document.getElementsByTagName("nav");
 
     body.classList.toggle("darkmode");
+
+    document.querySelectorAll('.icon-mask').forEach(icon => {
+        icon.classList.toggle('text-purple-300');
+        icon.classList.toggle('text-stone-900');
+    });
 
     modeToggle.classList.toggle("bg-brightviolet");
     modeToggle.classList.toggle("bg-brightviolet/50")

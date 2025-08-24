@@ -28,7 +28,7 @@ const skillsData = {
         description: 'Server-side JavaScript runtime for building scalable network applications and APIs.' },
     'Python': { proficiency: 83, category: 'Backend', color: 0x10b981, orbit: 1,
         description: 'Versatile programming language for web development, data analysis, and automation.' },
-    'React': { proficiency: 84, category: 'Backend', color: 0x06b6d4, orbit: 1,
+    'React': { proficiency: 84, category: 'Frontend', color: 0x06b6d4, orbit: 1,
         description: 'Component-based UI development with hooks, context, and state management.' },
     'Express': { proficiency: 85, category: 'Backend', color: 0x10b981, orbit: 1,
         description: 'Minimal Node.js web framework for building robust APIs and applications.' },
@@ -56,6 +56,8 @@ const skillsData = {
         description: 'Strongly typed JavaScript for better code quality and enhanced developer experience.' },
     'Figma': { proficiency: 75, category: 'Tools', color: 0xef4444, orbit: 2,
         description: 'Collaborative UI/UX design tool for wireframing, prototyping, and design systems.' },
+    'Render': { proficiency: 70, category: 'Tools', color: 0xef4444, orbit: 2, 
+        description: 'Cloud platform for deploying and hosting web applications, APIs, databases, and static websites with automated builds and SSL.' }
 };
 
 function init() {
@@ -169,7 +171,7 @@ function createSkillLabel(skillGroup, skillName) {
     const label = document.createElement('div');
     label.className = 'skill-label';
     label.textContent = skillName;
-    label.style.borderColor = `#${skillGroup.userData.data.color.toString(16)}`;
+    label.style.borderColor = `#${skillGroup.userData.data.color.toString(16).padStart(6, '0')}`;
     
     document.getElementById('canvas-container').appendChild(label);
     skillGroup.userData.labelElement = label;
@@ -279,15 +281,15 @@ function setSpeed(speed) {
     const speeds = { slow: 0.3, normal: 1, fast: 2 };
     animationSpeed = speeds[speed];
     
-    document.querySelectorAll('.control-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    document.querySelectorAll('.control-btn').forEach(btn => btn.setAttribute('aria-current', 'false'));
+    event.target.setAttribute('aria-current', 'true');
 }
 
 function togglePause() {
     isPaused = !isPaused;
     const btn = event.target;
     btn.textContent = isPaused ? 'Resume' : 'Pause';
-    btn.classList.toggle('active', isPaused);
+    btn.setAttribute('aria-current', isPaused ? 'true' : 'false');
 }
 
 // Modal functions
@@ -295,7 +297,8 @@ function openModal(skillName, skillData) {
     document.getElementById('modalTitle').textContent = skillName;
     document.getElementById('modalCategory').textContent = skillData.category + ' Technology';
     document.getElementById('modalDescription').textContent = skillData.description;
-    document.getElementById('progressPercent').textContent = skillData.proficiency + '%';
+    // not sure if i want specific percentage displyed
+    // document.getElementById('progressPercent').textContent = skillData.proficiency + '%'; 
     document.getElementById('progressFill').style.width = skillData.proficiency + '%';
     
     document.getElementById('skillModal').classList.add('show');

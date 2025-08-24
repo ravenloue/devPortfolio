@@ -7,7 +7,15 @@
 
     <link href="./dist/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./dist/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"
+      defer
+    ></script>
     <script src="./app/src/app.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
@@ -24,7 +32,7 @@
         class="fixed top-0 w-full z-50 bg-puissantpurple/30 border-b border-puissantpurple h-20 flex items-center justify-between px-4 backdrop-blur-md"
       >
         <!-- Name on left side -->
-        <div class="w-1/4 text-3xl gradient-text">Brandie Mallard</div>
+        <div class="md:w-1/4 text-3xl gradient-text">Brandie Mallard</div>
         <!-- Centered nav links that hide on smaller screens  -->
         <ul class="hidden md:flex justify-center space-x-6 text-2xl">
           <li class="list-none px-5 py-0">
@@ -144,159 +152,29 @@
           <a
             href="https://github.com/ravenloue"
             class="inline hover:animate-bounce"
-          >
-            <svg
-              width="51.4"
-              xmlns="http://www.w3.org/2000/svg"
-              height="51.4"
-              id="screenshot-9f348613-9ce7-8099-8006-44407cd8d818"
-              viewBox="102.75 309.471 51.4 51.4"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              fill="none"
-              version="1.1"
-              aria-label="Github Logo"
-            >
-              <g id="shape-9f348613-9ce7-8099-8006-44407cd8d818">
-                <g
-                  class="fills"
-                  id="fills-9f348613-9ce7-8099-8006-44407cd8d818"
-                >
-                  <path
-                    d="M128.453,309.471C114.252,309.465,102.750,321.274,102.750,335.849C102.750,347.375,109.945,357.172,119.966,360.770C121.315,361.118,121.108,360.133,121.108,359.461L121.108,354.890C113.316,355.827,113.000,350.531,112.478,349.646C111.421,347.794,108.923,347.322,109.670,346.437C111.444,345.499,113.253,346.673,115.349,349.852C116.865,352.159,119.822,351.769,121.321,351.386C121.648,350.000,122.349,348.761,123.313,347.800C115.240,346.313,111.875,341.252,111.875,335.236C111.875,332.316,112.811,329.632,114.648,327.467C113.477,323.899,114.757,320.843,114.930,320.389C118.266,320.082,121.734,322.843,122.004,323.061C123.899,322.536,126.064,322.259,128.487,322.259C130.922,322.259,133.093,322.548,135.005,323.079C135.654,322.571,138.870,320.200,141.970,320.489C142.137,320.943,143.389,323.928,142.286,327.449C144.147,329.620,145.094,332.328,145.094,335.253C145.094,341.282,141.706,346.348,133.610,347.811C135.010,349.226,135.799,351.161,135.797,353.179L135.797,359.815C135.843,360.346,135.797,360.871,136.659,360.871C146.828,357.349,154.150,347.481,154.150,335.855C154.150,321.274,142.642,309.471,128.453,309.471ZZ"
-                    style="fill: rgb(255, 255, 255); fill-opacity: 1"
-                  />
-                </g>
-              </g>
-            </svg>
-          </a>
+            ><img src="./app/src/imgs/github1.svg" alt="Github icon"
+          /></a>
           <a
             href="https://www.linkedin.com/in/brandie-mallard/"
             class="inline hover:animate-bounce"
-          >
-            <svg
-              width="51.405"
-              xmlns="http://www.w3.org/2000/svg"
-              height="51.405"
-              id="screenshot-b9293ae4-fb9b-8028-8002-aa25366189fb"
-              viewBox="0 0 51.405 51.405"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              fill="none"
-              version="1.1"
-              aria-label="LinkedIn Logo"
-            >
-              <g
-                id="shape-b9293ae4-fb9b-8028-8002-aa25366189fb"
-                rx="0"
-                ry="0"
-                style="fill: rgb(0, 0, 0)"
-              >
-                <g
-                  id="shape-b9293ae4-fb9b-8028-8002-aa25366189fc"
-                  rx="0"
-                  ry="0"
-                  style="fill: rgb(0, 0, 0)"
-                >
-                  <g id="shape-b9293ae4-fb9b-8028-8002-aa25366251e0">
-                    <g
-                      class="fills"
-                      id="fills-b9293ae4-fb9b-8028-8002-aa25366251e0"
-                    >
-                      <path
-                        d="M44.217,0.000L7.188,0.000C3.223,0.011,0.011,3.223,0.000,7.188L0.000,44.217C0.011,48.182,3.223,51.394,7.188,51.405L44.217,51.405C48.187,51.405,51.405,48.187,51.405,44.217L51.405,7.188C51.405,3.218,48.187,0.000,44.217,0.000ZZM48.530,44.217C48.513,46.592,46.592,48.513,44.217,48.530L7.188,48.530C4.813,48.513,2.892,46.592,2.875,44.217L2.875,7.188C2.892,4.813,4.813,2.892,7.188,2.875L44.217,2.875C46.592,2.892,48.513,4.813,48.530,7.188Z"
-                        style="fill: rgb(255, 255, 255); fill-opacity: 1"
-                      />
-                    </g>
-                  </g>
-                  <g
-                    id="shape-b9293ae4-fb9b-8028-8002-aa25366251e1"
-                    rx="0"
-                    ry="0"
-                    style="fill: rgb(0, 0, 0)"
-                  >
-                    <g id="shape-b9293ae4-fb9b-8028-8002-aa253662f2c2">
-                      <g
-                        class="fills"
-                        id="fills-b9293ae4-fb9b-8028-8002-aa253662f2c2"
-                      >
-                        <path
-                          d="M9.534,22.103C9.534,20.515,10.821,19.228,12.409,19.228C13.996,19.228,15.284,20.515,15.284,22.103L15.284,40.790L15.284,40.790C15.284,42.378,13.996,43.665,12.409,43.665C10.821,43.665,9.534,42.378,9.534,40.790Z"
-                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
-                        />
-                      </g>
-                    </g>
-                    <g id="shape-b9293ae4-fb9b-8028-8002-aa2536632183">
-                      <g
-                        class="fills"
-                        id="fills-b9293ae4-fb9b-8028-8002-aa2536632183"
-                      >
-                        <ellipse
-                          cx="12.408500000000004"
-                          cy="10.591499999999996"
-                          rx="2.875"
-                          ry="2.875"
-                          transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"
-                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
-                        />
-                      </g>
-                    </g>
-                    <g id="shape-b9293ae4-fb9b-8028-8002-aa2536635ab0">
-                      <g
-                        class="fills"
-                        id="fills-b9293ae4-fb9b-8028-8002-aa2536635ab0"
-                      >
-                        <path
-                          d="M41.860,29.641L41.860,40.796C41.860,42.384,40.573,43.671,38.985,43.671C37.397,43.671,36.110,42.384,36.110,40.796L36.110,29.641C36.110,27.982,35.225,26.450,33.788,25.620C32.352,24.791,30.582,24.791,29.145,25.620C27.709,26.450,26.824,27.982,26.824,29.641L26.824,40.796C26.824,42.384,25.537,43.671,23.949,43.671C22.361,43.671,21.074,42.384,21.074,40.796L21.074,22.109C21.098,20.531,22.371,19.258,23.949,19.234C24.941,19.207,25.868,19.725,26.364,20.585C29.581,18.760,33.526,18.785,36.720,20.651C39.913,22.517,41.871,25.943,41.860,29.641ZZ"
-                          style="fill: rgb(255, 255, 255); fill-opacity: 1"
-                        />
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </a>
+            ><img src="./app/src/imgs/linkedin.svg" alt="LinkedIn logo"
+          /></a>
           <a
             href="https://x.com/milkpillows"
             class="inline hover:animate-bounce"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="51"
-              height="51"
-              viewBox="0 0 300 271"
-              role="img"
-              aria-label="X Logo"
-            >
-              <path
-                fill="white"
-                d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
-              />
-            </svg>
-          </a>
+            ><img src="./app/src/imgs/x.svg" alt="X logo"
+          /></a>
           <a
             href="https://bsky.app/profile/ravenloue.bsky.social"
             class="inline hover:animate-bounce"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="51"
-              height="51"
-              viewBox="0 0 600 530"
-              role="img"
-              aria-label="Bluesky Logo"
-            >
-              <path
-                fill="white"
-                d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"
-              />
-            </svg>
-          </a>
+            ><img src="./app/src/imgs/bluesky.svg" alt="Bluesky logo"
+          /></a>
         </div>
 
         <!-- Blurb/Buttons Box -->
         <div>
           <!-- Blurb -->
-          <div class="min-w-1/3 space-y-4">
+          <div class="min-w-1/3 space-y-4 text-center md:text-left">
             <h1 class="text-6xl md:text-8xl font-bold">
               Hi there,<br />
 
@@ -311,14 +189,16 @@
               user-friendly applications across web and emerging technologies.
             </p>
           </div>
+
           <!--CTA buttons-->
-          <div class="flex space-x-4 mt-5">
-            <button
-              class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-colors animate-glow"
-              href
+          <div class="flex space-x-4 mt-5 justify-center">
+            <a href="#projects"
+              ><button
+                class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-colors animate-glow"
+              >
+                View My Work
+              </button></a
             >
-              View My Work
-            </button>
             <button
               class="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg transition-colors"
             >
@@ -327,7 +207,7 @@
           </div>
         </div>
         <!-- Picture -->
-        <div aria-label="Portrait" class="mt-16 ml-24 min-w-1/3">
+        <div aria-label="Portrait" class="mt-16 p-8 md:p-0 md:ml-24 min-w-1/3">
           <img src="./app/src/imgs/picofme.png" alt="Bio Pic" class="w-100" />
         </div>
       </section>
@@ -398,71 +278,134 @@
         <div class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
 
         <!-- 3d Skills Container-->
-        <div id="container">
+        <div
+          id="container"
+          class="relative w-full h-[600px] max-w-[800px] my-[25px] mx-auto"
+        >
           <div
             id="canvas-container"
-            class="bg-puissantpurple/10 backdrop-blur-md"
+            class="bg-puissantpurple/10 backdrop-blur-md absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden shadow-2xl"
           ></div>
 
           <!-- Speed Buttons -->
-          <div class="controls">
-            <button class="control-btn active" onclick="setSpeed('normal')">
+          <div class="absolute top-[10px] right-[10px] flex gap-1 z-[100]">
+            <button
+              aria-current="true"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-3 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('normal')"
+            >
               Normal
             </button>
-            <button class="control-btn" onclick="setSpeed('slow')">Slow</button>
-            <button class="control-btn" onclick="setSpeed('fast')">Fast</button>
-            <button class="control-btn" onclick="togglePause()">Pause</button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('slow')"
+            >
+              Slow
+            </button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('fast')"
+            >
+              Fast
+            </button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-3.5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="togglePause()"
+            >
+              Pause
+            </button>
           </div>
         </div>
 
         <!-- Skills Legend -->
-        <div class="legend">
-          <div class="legend-item">
+        <div class="flex fles-wrap justify-center gap-5 mt-1">
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
             <div
-              class="legend-color"
+              class="w-2.5 h-2.5 rounded-full"
               style="background: linear-gradient(135deg, #06b6d4, #0891b2)"
             ></div>
-            <span class="legend-text">Frontend</span>
+            <span class="text-slate-200 text-xs font-medium">Frontend</span>
           </div>
-          <div class="legend-item">
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
             <div
-              class="legend-color"
+              class="w-2.5 h-2.5 rounded-full"
               style="background: linear-gradient(135deg, #10b981, #059669)"
             ></div>
-            <span class="legend-text">Backend</span>
+            <span class="text-slate-200 text-xs font-mediumt">Backend</span>
           </div>
-          <div class="legend-item">
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
             <div
-              class="legend-color"
+              class="w-2.5 h-2.5 rounded-full"
               style="background: linear-gradient(135deg, #f59e0b, #d97706)"
             ></div>
-            <span class="legend-text">Database</span>
+            <span class="text-slate-200 text-xs font-medium">Database</span>
           </div>
-          <div class="legend-item">
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
             <div
-              class="legend-color"
+              class="w-2.5 h-2.5 rounded-full"
               style="background: linear-gradient(135deg, #ef4444, #dc2626)"
             ></div>
-            <span class="legend-text">Tools</span>
+            <span class="text-slate-200 text-xs font-medium">Tools</span>
           </div>
         </div>
 
         <!-- Modal -->
-        <div class="modal" id="skillModal">
-          <div class="modal-content">
-            <h2 class="modal-title" id="modalTitle"></h2>
-            <p class="modal-category" id="modalCategory"></p>
-            <p class="modal-description" id="modalDescription"></p>
-            <div class="progress-container">
-              <div class="progress-label">
+        <div
+          class="modal fixed inset-0 z-[1000] flex items-center justify-center bg-black/70 opacity-0 invisible transition-all duration-300 ease-in-out [&.show]:opacity-100 [&.show]:visible"
+          id="skillModal"
+        >
+          <div
+            class="modal-content w-[90%] max-w-[400px] rounded-2xl border border-purple-500/30 bg-[rgba(30,30,50,0.95)] p-5 backdrop-blur-lg"
+          >
+            <h2
+              class="modal-title text-2xl font-bold text-purple-500 mb-2"
+              id="modalTitle"
+            ></h2>
+            <p
+              class="modal-category text-slate-400 text-sm mb-4"
+              id="modalCategory"
+            ></p>
+            <p
+              class="modal-description text-slate-200 leading-relaxed text-sm mb-4"
+              id="modalDescription"
+            ></p>
+            <div class="progress-container mb-5">
+              <div
+                class="progress-label flex justify-between mb-1.5 text-xs text-slate-400"
+              >
                 <span>Proficiency</span>
-                <span id="progressPercent"></span>
+                <!-- <span id="progressPercent"></span> -->
               </div>
-              <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
+              <div
+                class="progress-bar w-full h-1.5 rounded-sm overflow-hidden bg-white/10"
+              >
+                <div
+                  class="progress-fill h-full rounded-sm bg-gradient-to-r from-purple-500 to-purple-600 transition-[width] duration-500 ease-in-out"
+                  id="progressFill"
+                  style="width: 0%"
+                ></div>
               </div>
             </div>
-            <button class="close-btn" onclick="closeModal()">Close</button>
+            <button
+              class="close-btn w-full bg-purple-500/20 border border-purple-500/50 px-3 py-1.5 rounded-2xl cursor-pointer font-semibold text-xs transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-purple-500/40 text-white hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(168,85,247,0.4)]"
+              onclick="closeModal()"
+            >
+              Close
+            </button>
           </div>
         </div>
       </section>
@@ -472,48 +415,317 @@
       </div>
 
       <!-- Projects -->
-      <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="projects">
+      <section
+        class="min-h-screen gap-8 px-6 py-12 mx-auto glide"
+        id="projects"
+      >
         <!-- Section Title-->
         <h2
           class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
         >
           Projects
         </h2>
-        <div class="w-30 md:w-60 h-1 bg-purple-600 mx-auto mt-[-30px]"></div>
-        <p class="text-center text-xs">Adding projects soon~</p>
         <div
-          class="w-full flex flex-row items-center justify-center gap-8 px-6 py-12 mx-auto"
+          class="w-30 md:w-60 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
+        ></div>
+        <div
+          class="flex items-center gap-2 relative glide__arrows"
+          data-glide-el="controls"
         >
-          <section
-            id="project1"
-            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+          <button
+            class="glide__arrow glide__arrow--left absolute bottom-[-25em] left-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir="<"
+            aria-label="Previous"
           >
-            &emsp;
-          </section>
-          <section
-            id="project2"
-            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
+            &larr;
+          </button>
+          <button
+            class="glide__arrow glide__arrow--right absolute bottom-[-25em] right-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir=">"
+            aria-label="Next"
           >
-            &emsp;
-          </section>
-          <section
-            id="project3"
-            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
-          >
-            &emsp;
-          </section>
-          <section
-            id="project4"
-            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
-          >
-            &emsp;
-          </section>
-          <section
-            id="project5"
-            class="bg-purple-300/50 rounded-4xl min-w-1/6 min-h-[600px]"
-          >
-            &emsp;
-          </section>
+            &rarr;
+          </button>
+        </div>
+        <div
+          class="glide__track"
+          aria-label="Project Carousel"
+          data-glide-el="track"
+        >
+          <ul class="glide__slides">
+            <!-- Project Card 1 -->
+            <li id="project1" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                >
+                  <img
+                    src="./app/src/imgs/landing-page.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Smart Clinic CMS</h3>
+                  <p class="">
+                    A full-stack content management system for a fictional
+                    hospital built using Spring Boot, PostgreSQL, & Thymeleaf/JS
+                    that supports patients, doctors, and admin roles with
+                    role-based dashboards, JWT authentication, appointment
+                    booking, and stored functions for generating reports.
+                    Deployed using Docker & Render.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Java</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Spring Boot</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >PostgreSQL</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="https://smart-clinic-cms-latest.onrender.com/"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="https://github.com/ravenloue/java-database-capstone"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 2 -->
+            <li id="project2" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 3 -->
+            <li id="project3" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 4 -->
+            <li id="project4" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 5 -->
+            <li id="project5" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -522,54 +734,259 @@
       </div>
 
       <!-- Blog -->
-      <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="blog">
+      <section class="min-h-screen gap-8 px-6 py-12 mx-auto glide" id="blog">
         <!-- Section Title-->
         <h2
           class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
         >
           Blog
         </h2>
-        <div class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-30px]"></div>
+        <div
+          class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
+        ></div>
         <p class="text-center text-xs">Adding blogs soon~</p>
         <div
-          class="w-full grid grid-cols-2 items-center justify-center gap-8 px-6 py-12 mx-auto"
+          class="flex items-center gap-2 relative glide__arrows"
+          data-glide-el="controls"
         >
-          <article
-            id="blog1"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+          <button
+            class="glide__arrow glide__arrow--left absolute bottom-[-20em] left-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir="<"
+            aria-label="Previous"
           >
-            &emsp;
-          </article>
-          <article
-            id="blog2"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
+            &larr;
+          </button>
+          <button
+            class="glide__arrow glide__arrow--right absolute bottom-[-20em] right-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir=">"
+            aria-label="Next"
           >
-            &emsp;
-          </article>
-          <article
-            id="blog3"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
-          >
-            &emsp;
-          </article>
-          <article
-            id="blog4"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
-          >
-            &emsp;
-          </article>
-          <article
-            id="blog5"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
-          >
-            &emsp;
-          </article>
-          <article
-            id="blog5"
-            class="bg-purple-300/50 rounded-4xl min-w-1/2 min-h-[200px]"
-          >
-            &emsp;
-          </article>
+            &rarr;
+          </button>
+        </div>
+        <div
+          class="glide__track"
+          aria-label="Blog Carousel"
+          data-glide-el="track"
+        >
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <article
+                id="blog1"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog2"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog3"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog4"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog5"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog5"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
       <div id="divider" class="ml-auto mr-auto text-center">
@@ -577,7 +994,7 @@
       </div>
 
       <!-- Contact -->
-      <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="contact">
+      <section class="gap-8 px-6 py-12 mx-auto" id="contact">
         <!-- Section Title -->
         <h2
           class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center"
@@ -586,66 +1003,36 @@
         </h2>
         <div class="w-40 md:w-80 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
 
-        <p class="text-center text-xs">Form not functional atm</p>
-        <form class="grid grid-cols-1 gap-6 w-2/5 mx-auto px-6 py-12">
-          <!-- Name -->
-          <div>
-            <label
-              for="name"
-              class="block mb-2 text-lg font-semibold text-white"
-              >Name</label
-            >
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
-            />
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label
-              for="email"
-              class="block mb-2 text-lg font-semibold text-white"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
-            />
-          </div>
-
-          <!-- Message -->
-          <div>
-            <label
-              for="message"
-              class="block mb-2 text-lg font-semibold text-white"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              class="w-full px-4 py-2 rounded-lg bg-purple-900/50 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
-            ></textarea>
-          </div>
-
-          <!-- Submit Button -->
-          <button
-            type="submit"
-            class="w-full py-3 rounded-2xl bg-brightviolet text-white font-bold text-xl hover:bg-purple-600 transition-all duration-300"
-          >
-            Send Message
-          </button>
-        </form>
+        <p class="text-center text-xs">Replacing form with alternative</p>
       </section>
     </main>
   </body>
-  <footer class="text-center pb-12 mt-[-40px]">&copy; 2025</footer>
+
+  <!-- Simple Footer -->
+  <footer class="text-center pb-12 mt-[-40px]">
+    <span class="gradient-text">⋆˚☆˖°⋆｡° ✮˖ ࣪ ⊹⋆.˚</span> Designed with💜 &copy;
+    2025 <span class="gradient-text-reverse">˚.⋆⊹ ˖✮ °｡⋆°˖☆˚⋆</span>
+  </footer>
+
+  <!-- Script for controlling the carousels -->
+  <script type="module">
+    import glidejsglide from "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/+esm";
+    const opts = {
+      type: "carousel",
+      focusAt: 0,
+      perView: 3,
+      gap: 24,
+      peek: { before: 100, after: 100 },
+      breakpoints: {
+        1280: { perView: 3, peek: { before: 64, after: 64 } },
+        1024: { perView: 2, peek: { before: 48, after: 48 } },
+        768: { perView: 1, peek: { before: 24, after: 24 } },
+        480: { perView: 1, peek: { before: 0, after: 0 } },
+      },
+    };
+
+    document.querySelectorAll(".glide").forEach((el) => {
+      new Glide(el, opts).mount();
+    });
+  </script>
 </html>
