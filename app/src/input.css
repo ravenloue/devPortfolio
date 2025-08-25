@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brightviolet: rgba(170, 17, 255);
+    --color-brightviolet-40: rgba(170, 17, 255, 0.4);
+    --color-brightviolet-60: rgba(170, 17, 255, 0.6);
+    --color-puissantpurple: rgba(111,33,191);
+    --color-veronicapurple: #752e76;
+    --color-russianviolet: #3a1a4e;
+    --color-smalt: rgba(0, 44, 153, .2);
+    
+}
+
+@layer components{
+    .gradient-text {
+        background: linear-gradient(135deg, var(--color-brightviolet), var(--color-russianviolet));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .gradient-text-reverse {
+        background: linear-gradient(135deg, var(--color-russianviolet), var(--color-brightviolet));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .icon-mask {
+        background-color: currentColor;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+    }
+
+    .text-border {
+        -webkit-text-stroke: 1px var(--color-purple-900);
+    }
+
+    .typing::after {
+        content: '|';
+        animation: blink 1s infinite;
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    /* Skill labels positioned absolutely */
+    .skill-label {
+        position: absolute;
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 3px 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        z-index: 50;
+        transition: all 0.2s ease;
+    }
+
+    /* Modal */
+    .modal.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) }
+        50% { transform: translateY(-10px) }
+    }
+
+    @keyframes glow {
+        from { box-shadow: 0 0 20px var(--color-brightviolet-40) }
+        to { box-shadow: 0 0 30px var(--color-brightviolet-60) }
+    }
+
+    @media (max-width: 768px) {
+        #container { height: 400px; margin: 20px; }
+        .header h1 { font-size: 2rem; }
+        .controls { top: 5px; right: 5px; }
+        .skill-label { font-size: 10px; padding: 2px 6px; }
+    }
+}

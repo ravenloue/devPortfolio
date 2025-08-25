@@ -1,0 +1,20 @@
+{
+  "name": "devportfolio",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./app/src/input.css -o ./dist/style.css --watch",
+    "prettier": "npx prettier --write **/*.html",
+    "minify": "npx tailwindcss -i ./app/src/input.css -o ./dist/style.css --minify"
+  },
+  "keywords": [],
+  "author": "Brandie Mallard",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8"
+  }
+}

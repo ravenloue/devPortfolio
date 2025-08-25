@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>👩🏻‍💻 Brandie Mallard</title>
+
+    <link href="./dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/dist/glide.min.js"
+      defer
+    ></script>
+    <script src="./app/src/app.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      defer
+    ></script>
+    <script src="./app/src/skills.js" defer></script>
+  </head>
+
+  <body class="darkmode scroll-smooth">
+    <!-- Main Nav Bar -->
+    <header>
+      <nav
+        id="navbar"
+        class="fixed top-0 w-full z-50 bg-puissantpurple/30 border-b border-puissantpurple h-20 flex items-center justify-between px-4 backdrop-blur-md"
+      >
+        <!-- Name on left side -->
+        <div class="md:w-1/4 text-3xl gradient-text">Brandie Mallard</div>
+        <!-- Centered nav links that hide on smaller screens  -->
+        <ul class="hidden md:flex justify-center space-x-6 text-2xl">
+          <li class="list-none px-5 py-0">
+            <a
+              href="#home"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Home</a
+            >
+          </li>
+          <li class="list-none px-5 py-0 whitespace-nowrap">
+            <a
+              href="#about"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >About Me</a
+            >
+          </li>
+          <li class="list-none px-5 py-0">
+            <a
+              href="#projects"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Projects</a
+            >
+          </li>
+          <li class="list-none px-5 py-0">
+            <a
+              href="#blog"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Blog</a
+            >
+          </li>
+          <li class="list-none px-5 py-0 whitespace-nowrap">
+            <a
+              href="#contact"
+              class="hover:animate-pulse transition-all duration-200 hover:underline"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+
+        <!-- Toggle Switch on far right -->
+        <ul class="flex w-1/4 justify-end">
+          <li class="list-none px-5 py-0 text-base">
+            <button
+              id="modeToggle"
+              class="bg-brightviolet border-2 border-hidden rounded-4xl cursor-pointer inline-flex m-auto p-0 h-6 relative leading-[1.75rem]"
+            >
+              <div
+                id="dark"
+                class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-start -left-0.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-moon-icon lucide-moon"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  />
+                </svg>
+              </div>
+              <div
+                id="light"
+                class="items-center flex px-0 py-0.5 mx-[1px] my-0 w-1/2 justify-end"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sun-icon lucide-sun"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+              </div>
+              <div
+                id="mode"
+                class="bg-stone-900 rounded-[50%] h-5 right-0.5 absolute top-0.5 w-5 transition-transform duration-500 ease-[cubic-bezier(0.23, 1, 0.320, 1)]"
+              ></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="relative z-20">
+      <!-- Hero Section -->
+      <section
+        class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8"
+        id="home"
+      >
+        <!-- Socials Pill -->
+        <div
+          id="socials"
+          class="invisible md:visible ml-5 md:ml-[5vw] mt-10 w-24 h-72 bg-veronicapurple flex flex-col items-center justify-center inset-shadow-[4px_4px_13px_20px_var(--color-smalt)] border-5 border-russianviolet rounded-[50px] gap-y-4"
+        >
+          <a
+            href="https://github.com/ravenloue"
+            class="inline hover:animate-bounce"
+            ><img src="./app/src/imgs/github1.svg" alt="Github icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/brandie-mallard/"
+            class="inline hover:animate-bounce"
+            ><img src="./app/src/imgs/linkedin.svg" alt="LinkedIn logo"
+          /></a>
+          <a
+            href="https://x.com/milkpillows"
+            class="inline hover:animate-bounce"
+            ><img src="./app/src/imgs/x.svg" alt="X logo"
+          /></a>
+          <a
+            href="https://bsky.app/profile/ravenloue.bsky.social"
+            class="inline hover:animate-bounce"
+            ><img src="./app/src/imgs/bluesky.svg" alt="Bluesky logo"
+          /></a>
+        </div>
+
+        <!-- Blurb/Buttons Box -->
+        <div>
+          <!-- Blurb -->
+          <div class="min-w-1/3 space-y-4 text-center md:text-left">
+            <h1 class="text-6xl md:text-8xl font-bold">
+              Hi there,<br />
+
+              I'm <span class="gradient-text text-border">Brandie</span>
+            </h1>
+            <h5 class="text-2xl whitespace-nowrap typing" id="typed">
+              Software Developer
+            </h5>
+            <p class="text-lg md:text-xl max-w-lg">
+              Creative problem solver and recent CS graduate with a love for
+              coding, design, and innovation&mdash;building scalable,
+              user-friendly applications across web and emerging technologies.
+            </p>
+          </div>
+
+          <!--CTA buttons-->
+          <div class="flex space-x-4 mt-5 justify-center">
+            <a href="#projects"
+              ><button
+                class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-colors animate-glow"
+              >
+                View My Work
+              </button></a
+            >
+            <button
+              class="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-lg transition-colors"
+            >
+              Download Resume
+            </button>
+          </div>
+        </div>
+        <!-- Picture -->
+        <div aria-label="Portrait" class="mt-16 p-8 md:p-0 md:ml-24 min-w-1/3">
+          <img src="./app/src/imgs/picofme.png" alt="Bio Pic" class="w-100" />
+        </div>
+      </section>
+
+      <div id="divider" class="text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+
+      <!-- About Me -->
+      <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="about">
+        <!-- Section Title-->
+        <div class="text-center mb-16">
+          <h2
+            class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border"
+          >
+            About Me
+          </h2>
+          <div class="w-40 md:w-80 h-1 bg-purple-600 mx-auto my-[-20px]"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <!-- Photo -->
+          <div aria-label="Portrait" class="">
+            <img
+              src="./app/src/imgs/picofme.png"
+              alt="Bio Pic"
+              class="mx-auto my-auto w-4/5"
+            />
+          </div>
+
+          <!-- Bio -->
+          <div aria-label="Bio" class="m-auto h-3/4 max-w-5xl">
+            <p class="text-xl leading-relaxed max-w-6xl">
+              &emsp;&emsp;Balancing full-time work with my studies, I recently
+              graduated from the University of the People with a 3.8
+              GPA&mdash;an achievement that I feel reflects both my dedication
+              and resilience. For me, every project feels like a puzzle: finding
+              the right mix of logic, design, and creativity to bring an idea to
+              life. <br />
+              &emsp;&emsp;Most of my work focuses on full-stack and front-end
+              development, where I enjoy turning complex requirements into
+              clean, intuitive interfaces. I've built projects using both the
+              Spring framework, NodeJS, and Django, which has given me
+              experience working across different stack configurations and the
+              flexibility to adapt to varied development environments, while
+              also working with object-oriented design, learning Agile best
+              practices, and modern web development approaches. <br />
+              &emsp;&emsp;At the same time, I'm curious about where tech is
+              heading&mdash;especially in areas like AI and AR. Exploring these
+              fields keeps me thinking about new possibilities and how digital
+              experiences can evolve. This portfolio is a snapshot of my
+              journey&mdash;projects that highlight not only my technical skills
+              but also emphasize the creativity and problem-solving mindset I
+              bring to my work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="min-h-screen gap-8 px-6 py-12 mx-auto" id="skills">
+        <!-- Section Title-->
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center"
+        >
+          Skills
+        </h2>
+        <div class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
+
+        <!-- 3d Skills Container-->
+        <div
+          id="container"
+          class="relative w-full h-[600px] max-w-[800px] my-[25px] mx-auto"
+        >
+          <div
+            id="canvas-container"
+            class="bg-puissantpurple/10 backdrop-blur-md absolute top-0 left-0 w-full h-full rounded-2xl overflow-hidden shadow-2xl"
+          ></div>
+
+          <!-- Speed Buttons -->
+          <div class="absolute top-[10px] right-[10px] flex gap-1 z-[100]">
+            <button
+              aria-current="true"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-3 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('normal')"
+            >
+              Normal
+            </button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('slow')"
+            >
+              Slow
+            </button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="setSpeed('fast')"
+            >
+              Fast
+            </button>
+
+            <button
+              aria-current="false"
+              class="control-btn bg-purple-500/20 border border-purple-500/50 text-purple-500 px-3.5 py-1.5 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out backdrop-blur-md text-xs font-semibold hover:bg-purple-500/40 hover:text-white aria-[current=true]:bg-purple-500/40 aria-[current=true]:text-white"
+              onclick="togglePause()"
+            >
+              Pause
+            </button>
+          </div>
+        </div>
+
+        <!-- Skills Legend -->
+        <div class="flex fles-wrap justify-center gap-5 mt-1">
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
+            <div
+              class="w-2.5 h-2.5 rounded-full"
+              style="background: linear-gradient(135deg, #06b6d4, #0891b2)"
+            ></div>
+            <span class="text-slate-200 text-xs font-medium">Frontend</span>
+          </div>
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
+            <div
+              class="w-2.5 h-2.5 rounded-full"
+              style="background: linear-gradient(135deg, #10b981, #059669)"
+            ></div>
+            <span class="text-slate-200 text-xs font-mediumt">Backend</span>
+          </div>
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
+            <div
+              class="w-2.5 h-2.5 rounded-full"
+              style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+            ></div>
+            <span class="text-slate-200 text-xs font-medium">Database</span>
+          </div>
+          <div
+            class="flex items-center gap-1.5 bg-black/30 px-3 py-1.5 rounded-2xl backdrop-blur-md"
+          >
+            <div
+              class="w-2.5 h-2.5 rounded-full"
+              style="background: linear-gradient(135deg, #ef4444, #dc2626)"
+            ></div>
+            <span class="text-slate-200 text-xs font-medium">Tools</span>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fixed inset-0 z-[1000] flex items-center justify-center bg-black/70 opacity-0 invisible transition-all duration-300 ease-in-out [&.show]:opacity-100 [&.show]:visible"
+          id="skillModal"
+        >
+          <div
+            class="modal-content w-[90%] max-w-[400px] rounded-2xl border border-purple-500/30 bg-[rgba(30,30,50,0.95)] p-5 backdrop-blur-lg"
+          >
+            <h2
+              class="modal-title text-2xl font-bold text-purple-500 mb-2"
+              id="modalTitle"
+            ></h2>
+            <p
+              class="modal-category text-slate-400 text-sm mb-4"
+              id="modalCategory"
+            ></p>
+            <p
+              class="modal-description text-slate-200 leading-relaxed text-sm mb-4"
+              id="modalDescription"
+            ></p>
+            <div class="progress-container mb-5">
+              <div
+                class="progress-label flex justify-between mb-1.5 text-xs text-slate-400"
+              >
+                <span>Proficiency</span>
+                <!-- <span id="progressPercent"></span> -->
+              </div>
+              <div
+                class="progress-bar w-full h-1.5 rounded-sm overflow-hidden bg-white/10"
+              >
+                <div
+                  class="progress-fill h-full rounded-sm bg-gradient-to-r from-purple-500 to-purple-600 transition-[width] duration-500 ease-in-out"
+                  id="progressFill"
+                  style="width: 0%"
+                ></div>
+              </div>
+            </div>
+            <button
+              class="close-btn w-full bg-purple-500/20 border border-purple-500/50 px-3 py-1.5 rounded-2xl cursor-pointer font-semibold text-xs transition-all duration-300 ease-in-out backdrop-blur-md hover:bg-purple-500/40 text-white hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(168,85,247,0.4)]"
+              onclick="closeModal()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+
+      <!-- Projects -->
+      <section
+        class="min-h-screen gap-8 px-6 py-12 mx-auto glide"
+        id="projects"
+      >
+        <!-- Section Title-->
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
+        >
+          Projects
+        </h2>
+        <div
+          class="w-30 md:w-60 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
+        ></div>
+        <div
+          class="flex items-center gap-2 relative glide__arrows"
+          data-glide-el="controls"
+        >
+          <button
+            class="glide__arrow glide__arrow--left absolute bottom-[-25em] left-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir="<"
+            aria-label="Previous"
+          >
+            &larr;
+          </button>
+          <button
+            class="glide__arrow glide__arrow--right absolute bottom-[-25em] right-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir=">"
+            aria-label="Next"
+          >
+            &rarr;
+          </button>
+        </div>
+        <div
+          class="glide__track"
+          aria-label="Project Carousel"
+          data-glide-el="track"
+        >
+          <ul class="glide__slides">
+            <!-- Project Card 1 -->
+            <li id="project1" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                >
+                  <img
+                    src="./app/src/imgs/landing-page.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Smart Clinic CMS</h3>
+                  <p class="">
+                    A full-stack content management system for a fictional
+                    hospital built using Spring Boot, PostgreSQL, & Thymeleaf/JS
+                    that supports patients, doctors, and admin roles with
+                    role-based dashboards, JWT authentication, appointment
+                    booking, and stored functions for generating reports.
+                    Deployed using Docker & Render.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Java</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Spring Boot</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >PostgreSQL</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="https://smart-clinic-cms-latest.onrender.com/"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="https://github.com/ravenloue/java-database-capstone"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 2 -->
+            <li id="project2" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 3 -->
+            <li id="project3" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 4 -->
+            <li id="project4" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <!-- Project Card 5 -->
+            <li id="project5" class="glide__slide">
+              <article
+                class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+                  <p class="">Project description</p>
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >React</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Node.js</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/github2.svg&quot;);
+                        "
+                        aria-label="Github link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+
+      <!-- Blog -->
+      <section class="min-h-screen gap-8 px-6 py-12 mx-auto glide" id="blog">
+        <!-- Section Title-->
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
+        >
+          Blog
+        </h2>
+        <div
+          class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
+        ></div>
+        <p class="text-center text-xs">Adding blogs soon~</p>
+        <div
+          class="flex items-center gap-2 relative glide__arrows"
+          data-glide-el="controls"
+        >
+          <button
+            class="glide__arrow glide__arrow--left absolute bottom-[-20em] left-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir="<"
+            aria-label="Previous"
+          >
+            &larr;
+          </button>
+          <button
+            class="glide__arrow glide__arrow--right absolute bottom-[-20em] right-[-1rem] rounded-2xl border px-3 py-1 text-sm hover:bg-black/5"
+            data-glide-dir=">"
+            aria-label="Next"
+          >
+            &rarr;
+          </button>
+        </div>
+        <div
+          class="glide__track"
+          aria-label="Blog Carousel"
+          data-glide-el="track"
+        >
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <article
+                id="blog1"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog2"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog3"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog4"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog5"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="glide__slide">
+              <article
+                id="blog5"
+                class="bg-purple-300/50 rounded-4xl overflow-hidden"
+              >
+                <div
+                  class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
+                ></div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                  <p class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="flex space-x-4 mt-4">
+                    <a
+                      href="#"
+                      class="text-purple-600 hover:text-purple-700 transition-colors"
+                      ><div
+                        class="w-5 h-5 icon-mask text-purple-300"
+                        style="
+                          mask-image: url(&quot;./app/src/imgs/link.svg&quot;);
+                        "
+                        aria-label="External link"
+                      ></div
+                    ></a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div id="divider" class="ml-auto mr-auto text-center">
+        <img src="./app/src/imgs/divider.svg" class="w-[50vw] h-[7vh] inline" />
+      </div>
+
+      <!-- Contact -->
+      <section class="gap-8 px-6 py-12 mx-auto" id="contact">
+        <!-- Section Title -->
+        <h2
+          class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center"
+        >
+          Contact Me
+        </h2>
+        <div class="w-40 md:w-80 h-1 bg-purple-600 mx-auto mt-[-20px]"></div>
+
+        <p class="text-center text-xs">Replacing form with alternative</p>
+      </section>
+    </main>
+  </body>
+
+  <!-- Simple Footer -->
+  <footer class="text-center pb-12 mt-[-40px]">
+    <span class="gradient-text">⋆˚☆˖°⋆｡° ✮˖ ࣪ ⊹⋆.˚</span> Designed with💜 &copy;
+    2025 <span class="gradient-text-reverse">˚.⋆⊹ ˖✮ °｡⋆°˖☆˚⋆</span>
+  </footer>
+
+  <!-- Script for controlling the carousels -->
+  <script type="module">
+    import glidejsglide from "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1/+esm";
+    const opts = {
+      type: "carousel",
+      focusAt: 0,
+      perView: 3,
+      gap: 24,
+      peek: { before: 100, after: 100 },
+      breakpoints: {
+        1280: { perView: 3, peek: { before: 64, after: 64 } },
+        1024: { perView: 2, peek: { before: 48, after: 48 } },
+        768: { perView: 1, peek: { before: 24, after: 24 } },
+        480: { perView: 1, peek: { before: 0, after: 0 } },
+      },
+    };
+
+    document.querySelectorAll(".glide").forEach((el) => {
+      new Glide(el, opts).mount();
+    });
+  </script>
+</html>
