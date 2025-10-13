@@ -58,7 +58,7 @@
           </li>
           <li class="list-none px-5 py-0">
             <a
-              href="#blog"
+              href="https://blog.brandiemallard.tech"
               class="hover:animate-pulse transition-all duration-200 hover:underline"
               >Blog</a
             >
@@ -428,8 +428,9 @@
         <div
           class="w-30 md:w-60 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
         ></div>
+        <!-- Buttons -->
         <div
-          class="flex items-center gap-2 relative glide__arrows"
+          class="flex items-center gap-2 relative glide__arrows z-50"
           data-glide-el="controls"
         >
           <button
@@ -447,13 +448,14 @@
             &rarr;
           </button>
         </div>
+        <!-- Carousel Cards -->
         <div
           class="glide__track"
           aria-label="Project Carousel"
           data-glide-el="track"
         >
           <ul class="glide__slides">
-            <!-- Project Card 1 -->
+            <!-- Smart Clinic Project Card -->
             <li id="project1" class="glide__slide">
               <article
                 class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
@@ -470,10 +472,13 @@
                   <h3 class="text-xl font-semibold mb-2">Smart Clinic CMS</h3>
                   <p class="">
                     A full-stack content management system for a fictional
-                    hospital built using Spring Boot, PostgreSQL, & Thymeleaf/JS
-                    that supports patients, doctors, and admin roles with
-                    role-based dashboards, JWT authentication, appointment
-                    booking, and stored functions for generating reports.
+                    hospital to streamline operations for patients, doctors, and
+                    administrators.<br />
+                    Built using Spring Boot, PostgreSQL, & Thymeleaf/JS, the
+                    application supports role-based dashboards, JWT
+                    authentication, appointment booking workflows, and stored
+                    functions for generating real-time insights into hospital
+                    performance.<br />
                     Deployed using Docker & Render.
                   </p>
                   <div class="flex flex-wrap gap-2 mt-4">
@@ -483,16 +488,17 @@
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >Spring Boot</span
+                      >Spring</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >PostgreSQL</span
+                      >Postgres</span
                     >
                   </div>
                   <div class="flex space-x-4 mt-4">
                     <a
                       href="https://smart-clinic-cms-latest.onrender.com/"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -504,6 +510,7 @@
                     ></a>
                     <a
                       href="https://github.com/ravenloue/java-database-capstone"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -517,34 +524,52 @@
                 </div>
               </article>
             </li>
-            <!-- Project Card 2 -->
+            <!-- Dealership Project Card -->
             <li id="project2" class="glide__slide">
               <article
                 class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
               >
                 <div
                   class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
-                ></div>
+                >
+                  <img
+                    src="./app/src/imgs/Dealership-landingpage.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
-                  <p class="">Project description</p>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Dealership Review Site
+                  </h3>
+                  <p class="">
+                    A full-stack web application for a national car dealership
+                    network to centralize customer reviews from branches across
+                    the United States.<br />
+                    Built using Django for backend logic and data modeling, with
+                    BootStrap and React for a responsive, interactive front-end.
+                    <br />
+                    Supports user authentication, role-based access, and
+                    real-time review management.<br />
+                    Deployed using Docker & Render.
+                  </p>
                   <div class="flex flex-wrap gap-2 mt-4">
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Python</span
+                    >
+                    <span
+                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                      >Django</span
+                    >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
                       >React</span
                     >
-                    <span
-                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >Node.js</span
-                    >
-                    <span
-                      class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >MongoDB</span
-                    >
                   </div>
                   <div class="flex space-x-4 mt-4">
                     <a
-                      href="#"
+                      href="https://dealership-latest.onrender.com/"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -555,7 +580,8 @@
                       ></div
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/ravenloue/fullstack_developer_capstone"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -569,17 +595,32 @@
                 </div>
               </article>
             </li>
-            <!-- Project Card 3 -->
+            <!-- Nursery Shopping App -->
             <li id="project3" class="glide__slide">
               <article
                 class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
               >
                 <div
                   class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
-                ></div>
+                >
+                  <img
+                    src="./app/src/imgs/Nursery-shopping-page.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
-                  <p class="">Project description</p>
+                  <h3 class="text-xl font-semibold mb-2">
+                    Nursery Shopping App
+                  </h3>
+                  <p class="">
+                    A front-end e-commerce web application for an online plant
+                    shop built using React, Redux, and React Router, featuring a
+                    dynamic product catalog, category-based listings, and a
+                    state- managed shopping cart with real-time updates.<br />
+                    Implements reusable UI components, global state management
+                    for cart actions, and seamless navigation between product
+                    and checkout pages.
+                  </p>
                   <div class="flex flex-wrap gap-2 mt-4">
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
@@ -587,16 +628,17 @@
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >Node.js</span
+                      >Redux</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >MongoDB</span
+                      >React Router</span
                     >
                   </div>
                   <div class="flex space-x-4 mt-4">
                     <a
-                      href="#"
+                      href="https://ravenloue.github.io/e-plantShopping/"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -607,7 +649,8 @@
                       ></div
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/ravenloue/e-plantShopping"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -621,34 +664,53 @@
                 </div>
               </article>
             </li>
-            <!-- Project Card 4 -->
+            <!-- Movie Database Search -->
             <li id="project4" class="glide__slide">
               <article
                 class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
               >
                 <div
                   class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
-                ></div>
+                >
+                  <img
+                    src="./app/src/imgs/tmdb-search-page.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
-                  <p class="">Project description</p>
+                  <h3 class="text-xl font-semibold mb-2">
+                    TMDB Trending Search
+                  </h3>
+                  <p class="">
+                    A mobile-friendly web application that integrates with The
+                    Movie Database (TMDB) API to display daily and weekly
+                    trending movies, TV shows, and industry personalities.
+                    <br />
+                    Built using TypeScript and Bootstrap 5, the app dynamically
+                    fetches and renders content with clean, uniform cards, and
+                    responsive layout design. Users can filter results by
+                    category and timeframe for a tailored browsing
+                    experience.<br />
+                    Deployed via Github Pages.
+                  </p>
                   <div class="flex flex-wrap gap-2 mt-4">
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >React</span
+                      >TypeScript</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >Node.js</span
+                      >Bootstrap</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >MongoDB</span
+                      >JSON</span
                     >
                   </div>
                   <div class="flex space-x-4 mt-4">
                     <a
-                      href="#"
+                      href="https://ravenloue.github.io/TMDB-TrendingSearch/public/"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -659,7 +721,8 @@
                       ></div
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/ravenloue/TMDB-TrendingSearch"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -673,34 +736,49 @@
                 </div>
               </article>
             </li>
-            <!-- Project Card 5 -->
+            <!-- SimpleBank -->
             <li id="project5" class="glide__slide">
               <article
                 class="bg-puissantpurple/50 rounded-xl shadow-lg overflow-hidden"
               >
                 <div
                   class="h-60 bg-gradient-to-br from-purple-400 to-purple-600"
-                ></div>
+                >
+                  <img
+                    src="./app/src/imgs/simple-bank-landing.png"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
                 <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-2">Project Name</h3>
-                  <p class="">Project description</p>
+                  <h3 class="text-xl font-semibold mb-2">Simple Bank</h3>
+                  <p class="">
+                    A PHP-based mock banking web application that simulates
+                    basic banking operations through a modular, object-oriented
+                    structure inspired by modern frameworks like React. <br />
+                    Built with PHP 8, HTML5, CSS3, and JavaScript, this project
+                    emphasizes clean UI design, component reusability, and
+                    database interaction best practices. <br />
+                    Deployed using Epizy as a way to explore full-stack
+                    workflows from concept to development.
+                  </p>
                   <div class="flex flex-wrap gap-2 mt-4">
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >React</span
+                      >PHP</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >Node.js</span
+                      >JavaScript</span
                     >
                     <span
                       class="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
-                      >MongoDB</span
+                      >MySQL</span
                     >
                   </div>
                   <div class="flex space-x-4 mt-4">
                     <a
-                      href="#"
+                      href="http://simplebank.ravenloue.epizy.com/"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -711,7 +789,8 @@
                       ></div
                     ></a>
                     <a
-                      href="#"
+                      href="https://github.com/ravenloue/simple_bank_web"
+                      target="_blank"
                       class="text-purple-600 hover:text-purple-700 transition-colors"
                       ><div
                         class="w-5 h-5 icon-mask text-purple-300"
@@ -739,14 +818,13 @@
         <h2
           class="text-6xl md:text-8xl font-bold mt-8 mb-8 gradient-text text-border text-center leading-[1.15] pb-[0.06em]"
         >
-          Blog
+          <a href="https://blog.brandiemallard.tech">Blog</a>
         </h2>
         <div
           class="w-20 md:w-40 h-1 bg-purple-600 mx-auto mt-[-30px] mb-8"
         ></div>
-        <p class="text-center text-xs">Blog project live soon~ Placeholders to demonstrate the card carousel</p>
         <div
-          class="flex items-center gap-2 relative glide__arrows"
+          class="flex items-center gap-2 relative glide__arrows z-50"
           data-glide-el="controls"
         >
           <button
