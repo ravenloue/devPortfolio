@@ -26,6 +26,9 @@ function toggleFunction() {
     let modeSwitch = document.getElementById("mode");
     let modeToggle = document.getElementById("modeToggle");
     let nav = document.getElementsByTagName("nav");
+    let cLink = document.getElementById("contact_link");
+    let cGit = document.getElementById("contact_git");
+    let cMail = document.getElementById("contact_email");
 
     body.classList.toggle("darkmode");
 
@@ -44,6 +47,17 @@ function toggleFunction() {
     nav[0].classList.toggle("bg-puissantpurple/30");
     nav[0].classList.toggle("border-puissantpurple");
     nav[0].classList.toggle("border-purple-200");
+
+    if (cGit.src.includes("/app/src/imgs/github1.svg")){
+        cGit.src = "/app/src/imgs/github2.svg";
+        cLink.src= "/app/src/imgs/linkedin2.svg";
+        cMail.src= "/app/src/imgs/email2.svg";
+    } else {
+        cGit.src = "/app/src/imgs/github1.svg";
+        cLink.src= "/app/src/imgs/linkedin.svg";
+        cMail.src= "/app/src/imgs/email.svg";
+    }
+
 }
 
 function typeWriter() {
